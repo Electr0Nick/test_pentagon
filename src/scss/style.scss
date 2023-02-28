@@ -1,0 +1,50 @@
+// ----------------------------------------------reset----------------------------------------------
+@import 'reset.scss';
+
+// ----------------------------------------------variables----------------------------------------------
+$mxw1600: 'max-width: 1600px';
+$mxw1100: 'max-width: 1100px';
+$mxw720: 'max-width: 720px';
+$mxw420: 'max-width: 420px';
+
+// ----------------------------------------------body----------------------------------------------
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+// ----------------------------------------------wrapper----------------------------------------------
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+// ----------------------------------------------container----------------------------------------------
+.container {
+  max-width: 1700px;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #e6e6e6;
+  &_my {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    row-gap: 1rem;
+    margin: 0 auto;
+    @media ($mxw1100) {
+      grid-template-columns: repeat(3, 33.33%);
+    }
+    @media ($mxw720) {
+      grid-template-columns: repeat(2, 50%);
+    }
+    @media ($mxw420) {
+      grid-template-columns: repeat(1, 100%);
+    }
+  }
+  &_bs {
+    margin: 50px auto 0;
+  }
+}
+
+// ----------------------------------------------import----------------------------------------------
+@import 'main.scss';
