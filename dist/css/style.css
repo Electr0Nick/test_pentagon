@@ -107,7 +107,6 @@ body {
   overflow: hidden
 }
 .container {
-  max-width: 1700px;
   width: 100%;
   padding: 20px 0;
   background-color: #e6e6e6
@@ -122,23 +121,6 @@ body {
 }
 .container_bs {
   margin: 50px auto 0
-}
-.pentagon {
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
-  -webkit-clip-path: polygon(20% 0,80% 0,100% 60%,50% 100%,0 60%);
-  clip-path: polygon(20% 0,80% 0,100% 60%,50% 100%,0 60%)
-}
-.pentagon__image {
-  -webkit-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s
-}
-.pentagon:hover .pentagon__image {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2)
 }
 .button {
   display: block;
@@ -156,6 +138,29 @@ body {
 }
 .button:hover {
   background-color: #8b06d3
+}
+.pentagon {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #000
+}
+.pentagon__image {
+  -webkit-transform-origin: center center 0;
+  -ms-transform-origin: center center 0;
+  transform-origin: center center 0;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s
+}
+.pentagon__image:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1)
+}
+.title {
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase
 }
 @media (max-width:1100px) {
   .container_my {

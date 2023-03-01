@@ -4,7 +4,7 @@
 import isWebp from './modules/can-browser-support-webp.js';
 isWebp();
 
-const arrOfPentagons = document.querySelectorAll('.pentagon');
+const arrOfPentagons = document.querySelectorAll('.container_my .pentagon');
 const shuffleButton = document.getElementById('btn-shuffle');
 
 let arrOfIndex = [];
@@ -22,3 +22,10 @@ const shufflePentagons = () => {
 }
 
 shuffleButton.addEventListener('click', shufflePentagons);
+
+
+// var svgImage = document.querySelectorAll('.pentagon__image');
+// Array.prototype.forEach.call(svgImage, function(el, i){
+//   var xOffset = '-' + ((Math.floor(el.getBoundingClientRect().width)) - 100) / 2;
+//   el.setAttribute('x', xOffset);
+// });
