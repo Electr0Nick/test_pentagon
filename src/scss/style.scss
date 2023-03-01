@@ -2,7 +2,7 @@
 @import 'reset.scss';
 
 // ----------------------------------------------bootstrap----------------------------------------------
-// @import 'mybsgrid.scss';
+@import 'mybsgrid.scss';
 
 // ----------------------------------------------variables----------------------------------------------
 $mxw1600: 'max-width: 1600px';
@@ -46,8 +46,15 @@ body {
   &_bs {
     margin: 50px auto 0;
   }
+  &_alt {
+    margin: 50px auto 0;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
 }
-
 
 // ----------------------------------------------import----------------------------------------------
 @import 'components.scss';

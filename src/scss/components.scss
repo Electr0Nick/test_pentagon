@@ -16,20 +16,42 @@
 .pentagon {
   width: 250px;
   height: 250px;
-  border: 1px solid #000;
-  // clip-path: polygon(20% 0%, 80% 0%, 100% 60%, 50% 100%, 0% 60%);
-  &__image {
-    transform-origin: center center 0;
-    transition: 200ms;
-    &:hover {
-      transform: scale(1.1);
-      // width: 110%;
-      // height: 110%;
+  margin: 0 auto;
+  &_1 {
+    mask-image: url('../img/pentagon.svg');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    .pentagon__image {
+      &:hover {
+        transform: scale(1.1);
+      }
     }
+  }
+  &_2 {
+    .pentagon__image {
+      &:hover {
+        width: 105%;
+        height: 105%;
+      }
+    }
+  }
+  &_3 {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 60%, 50% 100%, 0% 60%);
+    .pentagon__image {
+      transform-origin: center center 0;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__image {
+    transition: 200ms;
   }
 }
 .title {
   padding: 20px 0;
+  margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
 }

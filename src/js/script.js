@@ -22,10 +22,3 @@ const shufflePentagons = () => {
 }
 
 shuffleButton.addEventListener('click', shufflePentagons);
-
-
-// var svgImage = document.querySelectorAll('.pentagon__image');
-// Array.prototype.forEach.call(svgImage, function(el, i){
-//   var xOffset = '-' + ((Math.floor(el.getBoundingClientRect().width)) - 100) / 2;
-//   el.setAttribute('x', xOffset);
-// });
