@@ -7,7 +7,9 @@
 // ----------------------------------------------variables----------------------------------------------
 $mxw1600: 'max-width: 1600px';
 $mxw1100: 'max-width: 1100px';
+$mxw750: 'max-width: 750px';
 $mxw720: 'max-width: 720px';
+$mxw500: 'max-width: 500px';
 $mxw420: 'max-width: 420px';
 
 // ----------------------------------------------body----------------------------------------------
@@ -29,18 +31,28 @@ body {
   padding: 20px 0;
   background-color: #e6e6e6;
   &_my {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
     row-gap: 1rem;
     margin: 0 auto;
+    .container__element {
+      flex: 0 0 25%;
+    }
     @media ($mxw1100) {
-      grid-template-columns: repeat(3, 33.33%);
+      .container__element {
+        flex: 0 0 33.33%;
+      }
     }
     @media ($mxw720) {
-      grid-template-columns: repeat(2, 50%);
+      .container__element {
+        flex: 0 0 50%;
+      }
     }
     @media ($mxw420) {
-      grid-template-columns: repeat(1, 100%);
+      .container__element {
+        flex: 0 0 100%;
+      }
     }
   }
   &_bs {

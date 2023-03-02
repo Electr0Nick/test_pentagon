@@ -48,6 +48,22 @@
   &__image {
     transition: 200ms;
   }
+  @media ($mxw750) {
+    width: 240px;
+    height: 240px;
+  }
+  @media ($mxw720) {
+    width: 250px;
+    height: 250px;
+  }
+  @media ($mxw500) {
+    width: 210px;
+    height: 210px;
+  }
+  @media ($mxw420) {
+    width: 250px;
+    height: 250px;
+  }
 }
 .title {
   padding: 20px 0;
