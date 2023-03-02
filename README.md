@@ -8,8 +8,11 @@
 ### Результат:
 
 [Исходные файлы](https://github.com/Electr0Nick/test_pentagon/tree/main/src)
+
 [Собранное GULPом](https://github.com/Electr0Nick/test_pentagon/tree/main/dist)
+
 [test_pentagon на GithubPages](https://electr0nick.github.io/test_pentagon/dist/)
+
 [Код задачи №5](https://github.com/Electr0Nick/test_pentagon/blob/main/src/files/task5.php)
 
 
